@@ -28,7 +28,7 @@ from tqdm import tqdm
 JIRA_BASE = "https://issues.apache.org/jira"
 SEARCH_ENDPOINT = "/rest/api/2/search"
 ISSUE_ENDPOINT = "/rest/api/2/issue/{issue_id_or_key}"
-PROJECTS = ["HADOOP", "SPARK", "KAFKA"]  # change if you want other 3 projects
+PROJECTS = ["HADOOP", "SPARK", "KAFKA"]  # 3 projects of my choice
 FIELDS = "summary,description,comment,creator,reporter,assignee,labels,priority,status,created,updated,issuetype"
 MAX_RESULTS = 50  # page size (server may cap this)
 REQUESTS_PER_MINUTE = 60  # throttle; set lower if you get 429s
